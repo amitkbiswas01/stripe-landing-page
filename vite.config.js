@@ -1,10 +1,8 @@
-/** @type {import('vite').UserConfig} */
-
 export default {
   build: {
     manifest: true,
     rollupOptions: {
-      input: "web/themes/custom/stripe_landing/ts/main.ts",
+      input: "web/themes/custom/stripe_landing/js/main.js",
       output: {
         manualChunks: () => "app",
         entryFileNames: `assets/main.js`,
