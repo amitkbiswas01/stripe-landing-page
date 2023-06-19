@@ -4,6 +4,7 @@ description: "A custom theme to clone stripe landing page"
 core_version_requirement: ">=9.2"
 libraries:
   - stripe_landing/global-styling
+  - stripe_landing/global-scripting
 base theme: stark
 regions:
   branding: Branding

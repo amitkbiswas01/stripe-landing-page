@@ -1,7 +1,7 @@
 global-styling:
-  version: 1.x
-  js:
-    js/main.js: {}
   css:
     theme:
-      css/main.css: {}
+      dist/assets/main.css: {}
+global-scripting:
+  js:
+    dist/assets/main.js: {}
