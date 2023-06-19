@@ -1,0 +1,14 @@
+name: stripe-landing-page
+recipe: drupal10
+config:
+  webroot: web
+
+services:
+  appserver:
+    build:
+      - composer install
+  database:
+    creds:
+      user: drupal
+      password: drupal
+      database: drupal
