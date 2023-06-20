@@ -1,0 +1,49 @@
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .hero-details {
+    width: 60%;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+
+    .title {
+      margin: 0;
+
+      color: #3a3a3a;
+      font-size: 94px;
+      font-weight: 600;
+      letter-spacing: -4px;
+      line-height: 96px;
+    }
+
+    .description {
+      width: 75%;
+
+      padding-left: 16px;
+      color: #425466;
+      font-size: 18px;
+      letter-spacing: 0.2px;
+      line-height: 28px;
+    }
+
+    .cta-buttons {
+      padding-left: 16px;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .cta-button {
+        margin-right: 14px;
+      }
+    }
+  }
+
+  .hero-image {
+    width: 40%;
+  }
+}

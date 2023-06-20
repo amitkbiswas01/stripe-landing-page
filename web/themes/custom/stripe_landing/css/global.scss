@@ -1,0 +1,37 @@
+// fonts
+@font-face {
+  font-family: "Helvetica Neue";
+  src: url("../fonts/HelveticaBlkIt.ttf") format("truetype");
+}
+
+// style resets
+body {
+  font-size: 16px;
+  font-family: "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+a,
+p {
+  margin: 0;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
+// drupal style overrides
+.layout-content {
+  width: 1286px;
+  margin: auto;
+  position: relative;
+}

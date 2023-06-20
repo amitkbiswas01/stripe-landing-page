@@ -1,0 +1,17 @@
+<section class="hero-container">
+  <div class="hero-details">
+    <h2 class="title">{{ title }}</h2>
+    <div class="description">{{ description }}</div>
+    <div class="cta-buttons">
+      {% for link in links %}
+        {% include "@stripe_landing/components/base/cta-button/cta-button.twig" with {
+          'link': link,
+          'buttonType': loop.index == 1 ? 'primary' : 'transparent',
+        }%}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="hero-image">
+    {{ hero_image }}
+  </div>
+</section>

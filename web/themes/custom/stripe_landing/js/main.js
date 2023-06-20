@@ -1,9 +1,7 @@
-import "../css/main.scss";
+import "../css/style.scss";
 
 (($, Drupal) => {
   Drupal.behaviors.showText = {
-    attach: function (context, settings) {
-      $("#block-stripe-landing-content", context).css("display", "none");
-    },
+    attach: function (context, settings) {},
   };
 })(jQuery, Drupal);

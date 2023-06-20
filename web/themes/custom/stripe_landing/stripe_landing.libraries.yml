@@ -1,7 +1,7 @@
 global-styling:
   css:
     theme:
-      dist/assets/main.css: {}
+      dist/assets/style.css: {}
 global-scripting:
   js:
     dist/assets/main.js: {}
