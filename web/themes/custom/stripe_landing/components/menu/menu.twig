@@ -1,0 +1,30 @@
+{% set menus = [
+  'Products',
+  'Solutions',
+  'Developers',
+  'Resources',
+  'Pricing',
+] %}
+{% set ctaButtons = [
+  {label: 'Contact Sales', url: 'https://stripe.com/en-ch/contact/sales'},
+  {label: 'Sign In', url: 'https://dashboard.stripe.com/'},
+] %}
+
+<nav class="menu-container">
+  {% include "@stripe_landing/components/icons/stripe-logo.twig" %}
+  <ul class="items-container">
+    {% for menu in menus %}
+      <li>{{ menu }}</li>
+    {% endfor %}
+  </ul>
+  <div class="cta-buttons-container">
+    {% for ctaButton in ctaButtons %}
+      {% include "@stripe_landing/components/base/cta-button/cta-button.twig" with {
+        'label': ctaButton.label,
+        'url': ctaButton.url,
+        'buttonType': loop.index == 1 ? 'transparent' : 'semi-transparent',
+          'textColor': loop.index == 1 ? 'white' : ''
+      }%}
+    {% endfor %}
+  </div>
+</nav>

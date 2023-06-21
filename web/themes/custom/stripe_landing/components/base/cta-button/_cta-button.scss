@@ -3,8 +3,9 @@
   border-radius: 16px;
   font-weight: 400;
   letter-spacing: 0.2px;
-  color: white;
   outline: none;
+
+  color: white;
 
   display: flex;
   justify-content: center;
@@ -21,8 +22,12 @@
     background-color: #c44a47;
   }
 
+  &.semi-transparent {
+    background-color: rgba($color: white, $alpha: 0.25);
+  }
+
   &.transparent {
-    color: black;
+    color: #3a3a3a;
     background-color: transparent;
   }
 

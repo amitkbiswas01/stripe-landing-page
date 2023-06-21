@@ -1,4 +1,4 @@
-<a class="{{ 'cta-button ' ~ buttonType }}" href="{{ link['#url'] }}">
-  {{ link['#title'] }}
+<a class="{{ 'cta-button ' ~ buttonType }}" {% if textColor %} style="color:{{textColor}}" {% endif %} href="{{ url }}">
+  {{ label }}
   {% include "@stripe_landing/components/icons/right-arrow.twig" %}
 </a>

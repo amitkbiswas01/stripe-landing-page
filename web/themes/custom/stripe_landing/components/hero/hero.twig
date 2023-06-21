@@ -5,7 +5,8 @@
     <div class="cta-buttons">
       {% for link in links %}
         {% include "@stripe_landing/components/base/cta-button/cta-button.twig" with {
-          'link': link,
+          'label': link['#title'],
+          'url': link['#url'],
           'buttonType': loop.index == 1 ? 'primary' : 'transparent',
         }%}
       {% endfor %}
