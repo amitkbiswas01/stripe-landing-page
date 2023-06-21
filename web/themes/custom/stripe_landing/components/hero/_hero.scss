@@ -22,8 +22,6 @@
 
     .description {
       width: 75%;
-
-      padding-left: 16px;
       color: #425466;
       font-size: 18px;
       letter-spacing: 0.2px;
@@ -31,8 +29,6 @@
     }
 
     .cta-buttons {
-      padding-left: 16px;
-
       display: flex;
       justify-content: flex-start;
       align-items: center;
@@ -43,7 +39,16 @@
     }
   }
 
-  .hero-image {
+  .hero-images {
     width: 40%;
+
+    position: relative;
+
+    .front {
+      position: absolute;
+      top: 80px;
+      right: -300px;
+      z-index: 10;
+    }
   }
 }
