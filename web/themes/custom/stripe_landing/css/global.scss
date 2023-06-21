@@ -39,3 +39,11 @@ li {
   margin: auto;
   position: relative;
 }
+
+// for third-party libraries
+#gradient-canvas {
+  --gradient-color-1: #fe6860;
+  --gradient-color-2: #fe8a71;
+  --gradient-color-3: #d9bbae;
+  --gradient-color-4: #f3c9bf;
+}
