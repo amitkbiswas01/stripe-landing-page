@@ -46,9 +46,13 @@
 
     .front {
       position: absolute;
-      top: 80px;
-      right: -300px;
+      top: -30px;
+      right: -320px;
       z-index: 10;
+    }
+
+    .back {
+      margin-top: 20px;
     }
   }
 }

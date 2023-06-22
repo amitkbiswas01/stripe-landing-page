@@ -20,9 +20,14 @@
 
     li {
       color: white;
-      font-weight: 400;
+      font-weight: 500;
       padding: 10px 20px;
       cursor: pointer;
+      transition: transform 100ms;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 

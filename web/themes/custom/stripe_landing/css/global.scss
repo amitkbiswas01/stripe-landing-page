@@ -9,8 +9,7 @@ body {
   font-size: 16px;
   font-family: "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
-
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 h1,
@@ -46,4 +45,18 @@ li {
   --gradient-color-2: #fe8a71;
   --gradient-color-3: #d9bbae;
   --gradient-color-4: #f3c9bf;
+}
+
+// global
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fe6860;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fe8a71;
 }
